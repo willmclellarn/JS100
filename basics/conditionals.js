@@ -1,27 +1,31 @@
-function localGreet(locale) {
-  let language = extractLanguage(locale).toLowerCase();
-  let region = extractRegion(locale).toLowerCase();
+console.log(greeting);
 
-    switch (region) {
-        case 'us':
-          return 'Hello USA!';
-        case 'gb':
-          return 'Ello Mate!';
-        case 'au':
-          console.log('Hello Thunder from Under!');
-        default:
-          console.log(`Sorry, we are out of ${expr}.`);
-    }
+var greeting = 'Hello world!';
 
-}
+// function localGreet(locale) {
+//   let language = extractLanguage(locale).toLowerCase();
+//   let region = extractRegion(locale).toLowerCase();
 //
-
-function extractRegion(str) {
-  return str.split('_')[1].split('.')[0];
-}
-function extractLanguage(str) {
-  return str.slice(0,2);
-
+//     switch (region) {
+//         case 'us':
+//           return 'Hello USA!';
+//         case 'gb':
+//           return 'Ello Mate!';
+//         case 'au':
+//           console.log('Hello Thunder from Under!');
+//         default:
+//           console.log(`Sorry, we are out of ${expr}.`);
+//     }
+//
+// }
+// //
+//
+// function extractRegion(str) {
+//   return str.split('_')[1].split('.')[0];
+// }
+// function extractLanguage(str) {
+//   return str.slice(0,2);
+//
 
 // extractRegion('en_US.UTF-8');  // 'US'
 // extractRegion('en_GB.UTF-8');  // 'GB'
