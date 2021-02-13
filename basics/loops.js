@@ -1,12 +1,20 @@
 // all looping assignments are here
 
-let i = 0;
-while (i <= 40) {
-  if (i % 2 === 1) {
-    console.log(i);
+let fish = ['Dory', 'Marlin', 'Gill', 'Nemo', 'Bruce'];
+for (let i = 0; i < fish.length; i++) {
+  console.log(fish[i]);
+  if (fish[i] === 'Nemo') {
+    break;
   }
-  i++;
 }
+
+// let i = 0;
+// while (i <= 40) {
+//   if (i % 2 === 1) {
+//     console.log(i);
+//   }
+//   i++;
+// }
 
 // let cities = ['Istanbul', 'Los Angeles', 'Tokyo', null, 'Vienna', null, 'London', 'Beijing', null];
 // for (let i = 0; i < cities.length; i++) {
